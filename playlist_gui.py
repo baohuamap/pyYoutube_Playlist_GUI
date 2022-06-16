@@ -140,10 +140,10 @@ while running:
     clock.tick(60)
     screen.fill(GREY)
 
-    for i in range(len(playlists_btn_list)):
-        playlists_btn_list[i].draw(playlists_ill_list[i], playlists_img_list[i])
-    for i in range(len(videos_btn_list)):
-        videos_btn_list[i].draw(videos_ill_list[i], videos_img_list[i])
+    for playlist in range(len(playlists_btn_list)):
+        playlists_btn_list[playlist].draw(playlists_ill_list[playlist], playlists_img_list[playlist])
+    for video in range(len(videos_btn_list)):
+        videos_btn_list[video].draw(videos_ill_list[video], videos_img_list[video])
         
     for event in pygame.event.get():
         if event.type == pygame.MOUSEBUTTONDOWN:
